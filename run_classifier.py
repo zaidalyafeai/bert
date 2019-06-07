@@ -353,7 +353,9 @@ class ColaProcessor(DataProcessor):
 
   def get_labels(self):
     """See base class."""
-    return [str(x) for x in range(14)]
+    classes = [str(x) for x in range(14)]
+    print(classes) 
+    return classes
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
